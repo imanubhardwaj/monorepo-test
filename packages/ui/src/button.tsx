@@ -1,17 +1,9 @@
-import { ReactNode } from "react";
-import MuiButton from "@mui/material/Button";
+import MuiButton, { ButtonProps } from "@mui/material/Button";
 
-interface ButtonProps {
-  children: ReactNode;
-  className?: string;
-  appName: string;
-}
-
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const Button = ({ children, ...props }: ButtonProps) => {
   return (
     <MuiButton
-      className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
+      {...props}
     >
       {children}
     </MuiButton>

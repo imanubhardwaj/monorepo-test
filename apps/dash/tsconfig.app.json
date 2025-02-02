@@ -20,11 +20,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-
-    "paths": {
-      "@repo/ui": ["../../packages/ui/dist/*"]
-    }
+    "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "../../packages/ui/dist/index.d.ts"]
+  "include": ["src", "node_modules/@repo/ui/dist/index.d.ts"]
 }
